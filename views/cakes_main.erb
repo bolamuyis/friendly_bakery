@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <title>Marien's Bakery</title>
+</head>
+<body>
+  <div id="first" class="container-fluid">
+  <header>
+  <h1>Marien's Bakery</h1>
+  </div>
+  <div class="container">
+  <nav id="nav-b" class="navbar navbar-expand-lg">
+    <!-- navbar-dark bg-dark -->
+    <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"   aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/cakes">Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cookies">Cookies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/muffins">Muffins</a>
+        </li>
+      </ul>
+       <span class="navbar-text">
+        New York's one and only "YUM" Bakery: Come discover for yourself!
+      </span>
+    </div>
+  </nav>
+</header>
+
+  <%= yield %>
+
+<div class="card-deck">
+  <div class="card">
+    <img src="images/cakes-appleCake.jpg" class="card-img-top" alt="Apple Cake">
+    <div id="card-more" class="card-body">
+      <h5 class="card-title-plus">Apple Cake</h5>
+      <p class="card-text">Price $12</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/cakes-rasberry_cake.jpg" class="card-img-top" alt="Strawberry Cake">
+    <div id="card-more" class="card-body">
+      <h5 class="card-title-plus">Strawberry Cake</h5>
+      <p class="card-text">Price $12</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/cakes-redWineChocCake.jpg" class="card-img-top" alt="Red Wine Chocolate Cake">
+    <div id="card-more" class="card-body">
+      <h5 class="card-title-plus">Red Wine Chocolate Cake</h5>
+      <p class="card-text">Price $12</p>
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img src="images/cakes-assorted-Cakes.jpg" class="card-img-top" alt="Assorted Cup Cakes">
+    <div id="card-more" class="card-body">
+      <h5 class="card-title-plus">Assorted Cup Cakes</h5>
+      <p class="card-text">Price $12</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/cakes-rasberryCake.jpg" class="card-img-top" alt="Strawberry and Chocolate Cake">
+    <div id="card-more" class="card-body">
+      <h5 class="card-title-plus">Strawberry and Chocolate Cake</h5>
+      <p class="card-text">Price $12</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/cakes-cupcakes-cake-lots.jpg" class="card-img-top" alt="Cupcakes Cake-Lots">
+    <div id="card-more" class="card-body">
+      <h5 class="card-title-plus">Cup cake lot</h5>
+      <p class="card-text">Price $12</p>
+    </div>
+  </div>
+</div>
+
+</div>
+  <div class="push"></div>
+  <footer>
+    <div class="container">
+        <div class="card-deck">
+        <div id="card-mor" class="card">
+          <div id="card-footer" class="card-body">
+          GET OUR CATALOG
+            <form action="/" method="post" id="usrform">
+              <table id="emailTable">
+                <tbody>
+                <tr>
+                <td>Name</td><td><input type="text" name="name" placeholder="Enter your name"></td>
+              </tr>
+              <tr>
+                <td>Email</td><td><input type="email" name="email" placeholder="Enter your email"></td>
+              </tr>
+              <tr>
+                <td></td><td><input type="submit" value="submit"></td>
+              </tr>
+              </table>
+              </tbody>
+            </form>
+          </div>
+        </div>
+        <div id="card-mor" class="card">
+          <div id="card-footer" class="card-body">
+            <p class="card-text">
+            Contact Marien's Bakery<br />
+            1411 Zerega Avenue<br />
+            Bronx, NY 10462<br />
+            555-555-5555 (Marien)</p>
+          </div>
+        </div>
+        <div id="card-mor" class="card">
+          <div id="card-footer" class="card-body">
+            <p class="card-text">Stay in contact.</p>
+            <ul>
+            <li><img class="social" src="images/facebook.png" alt=""></li>
+            <li><img class="social" src="images/instagram.png" alt=""></li>
+            <li><img class="social" src="images/twitter.png" alt=""></li>
+            <li><img class="social" src="images/pinterest.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
